@@ -1,0 +1,153 @@
+-----------------------
+Javascript
+-----------------------
+Es un lenguaje de programación interpretado y orientado a objetos que se utiliza principalmente para 
+crear contenido interactivo en sitios web. Fue desarrollado inicialmente por Netscape en 1995 y desde 
+entonces se ha convertido en uno de los lenguajes de programación más populares en el desarrollo web.
+
+Características principales de JavaScript:
+    Interactividad: Permite añadir interactividad a las páginas web, como responder a eventos de usuario (clics, movimientos del mouse, etc.). 
+    Ejecución en el navegador: JavaScript se ejecuta directamente en el navegador del usuario, lo que permite una experiencia de usuario más dinámica y rápida.
+    Lenguaje del lado del cliente: Es comúnmente utilizado en el lado del cliente (cliente-side), pero también puede usarse en el servidor con tecnologías como Node.js.
+    Sintaxis: Tiene una sintaxis similar a otros lenguajes de programación como Java o C, lo que lo hace accesible para los desarrolladores que conocen esos lenguajes.
+    Manipulación del DOM: JavaScript permite manipular el Document Object Model (DOM) de una página web, lo que significa que puedes cambiar la estructura, el estilo y el contenido de una página web en tiempo real.
+
+-----------------------
+DEFINICION DE VARIABLE
+-----------------------
+En JavaScript, una variable es un contenedor para almacenar valores. Se pueden declarar variables utilizando las palabras clave var, let o const, seguidas por el nombre de la variable. Por ejemplo:
+
+codigo javascript:
+    // antes de ECMAScript 6 (ES6) solo existia solo una forma para declarar variable.
+    var nombre = "Juan";
+
+    // se utiliza para declarar variables que pueden ser reasignadas.
+    let edad = 30; 
+    
+    // cuyo valor no puede reasignado una vez se han establecido. 
+    const PI = 3.1416; 
+    
+Las variables en un ámbito de bloque (block scope), lo que significa que están disponibles solo dentro del bloque en el que se declaran.
+siempre se deben utilizar la variable const como buena practica. pero si necesitas q la variable cambie se debe ocupar let
+
+
+UppperCameCase:
+    también conocido como PascalCase, es un estilo de nomenclatura en el que cada palabra en una cadena comienza con una letra mayúscula y no se utilizan espacios ni guiones bajos para separar las palabras. Este estilo de nomenclatura es comúnmente utilizado en muchos lenguajes de programación, incluyendo JavaScript, para nombrar clases y constructores.
+    Uso de UpperCamelCase en Diferentes Contextos
+    -   JavaScript:
+        -   Clases y constructores.
+        -   A veces se utiliza para constantes globales.
+
+    -   Java:
+        -   Nombres de clases y métodos.
+
+camelCase:
+    Es un estilo de nomenclatura en programación donde las palabras en una cadena se unen sin espacios, y cada palabra, excepto la primera, comienza con una letra mayúscula. Este estilo es comúnmente utilizado para nombrar variables y funciones en muchos lenguajes de programación, incluyendo JavaScript.
+    Uso de camelCase en Diferentes Contextos
+    -   JavaScript:
+        -   Nombres de variables y funciones.
+        -   Propiedades de objetos.
+
+    -   Java:
+        -   Nombres de variables y métodos.
+
+snake_case:
+    Es un estilo de nomenclatura en el cual las palabras en una cadena se separan por guiones bajos (_), y generalmente se escriben en minúsculas. Este estilo es comúnmente utilizado para nombrar variables y funciones en muchos lenguajes de programación, incluyendo Python.
+-----------------------
+TIPO DE DATOS
+-----------------------
+    primitivos - (stack):
+        Stack: Es rápido y se utiliza para almacenar variables locales y ejecutar funciones. Las variables almacenadas en el stack tienen un ciclo de vida corto (duran lo que dura la función).
+        
+        Es una característica de ciertos lenguajes de programación donde el tipo de una variable se determina en tiempo de ejecución, en lugar de en tiempo de compilación. 
+        En estos lenguajes, las variables no requieren una declaración de tipo explícita, y pueden cambiar de tipo a medida que el programa se ejecuta.    
+        En cuanto a los tipos de datos en JavaScript, existen varios tipos, incluidos:
+        -   Números (Number): Representan valores numéricos, como 5 o 3.14.
+        -   Cadenas de texto (String): Representan secuencias de caracteres, como "Hola, mundo".
+        -   Booleanos (Boolean): Representan valores de verdadero (true) o falso (false).
+        -   Valores nulos (null) y indefinidos (undefined): Representan la ausencia de valor o un valor no definido.
+
+        Características de los Tipos Primitivos:
+            Inmutabilidad: En muchos lenguajes, los valores primitivos son inmutables, lo que significa que su valor no puede cambiar una vez asignado.
+            Almacenamiento simple: Los tipos de datos primitivos suelen almacenarse directamente en la memoria (en la pila), lo que los hace más rápidos y eficientes en términos de uso de recursos.
+            Operaciones directas: Se pueden realizar operaciones directas sobre estos tipos de datos sin necesidad de métodos o constructores especiales.
+
+        Constantes: ?
+
+
+    de referencia - (heap):
+        Heap: Es más flexible y se utiliza para almacenar datos que necesitan ser más dinámicos o que tienen un ciclo de vida más largo, como objetos y arreglos. La gestión de la memoria es más compleja, y por eso JavaScript utiliza un recolector de basura.
+       
+        son aquellos en los que las variables no almacenan directamente el valor del dato, sino una referencia a la ubicación de ese dato en la memoria (específicamente en el heap). Esto contrasta con los tipos de datos primitivos, que se almacenan directamente en el stack.    
+            -   Objetos: Representan colecciones de pares clave-valor, como { nombre: "Juan", edad: 30 }. "esas llaves se le llama obj literal {}"
+
+            -   Arreglos: Representan listas ordenadas de valores, como [1, 2, 3].
+            -   Funciones: Representan bloques de código que se pueden ejecutar.
+            -   Clases:
+
+    Estos son solo algunos de los tipos de datos y operadores en JavaScript. 
+    El lenguaje también tiene soporte para otros tipos y operadores más avanzados.
+
+---------------------------------
+tipo de lenguajes de programacion
+---------------------------------
+    tipado estático:
+        TypeScript es un superconjunto de JavaScript que agrega tipado estático y otras características avanzadas. 
+        Con TypeScript, puedes definir los tipos de variables, parámetros de funciones y valores de retorno, 
+        lo que permite que el compilador detecte errores de tipo antes de ejecutar el código.
+
+        Ejemplo en TypeScript:
+        Copiar código
+            let numero: number = 10;
+            let texto: string = "Hola";
+
+            numero = "Hola"; // Error: el tipo 'string' no se puede asignar al tipo 'number'
+
+        En este ejemplo, numero está declarado como un número (number) y texto como una cadena de texto (string). 
+        Si intentas asignar un valor de un tipo diferente, TypeScript generará un error en tiempo de compilación.
+
+        Aunque TypeScript introduce el tipado estático, una vez que el código TypeScript se compila,
+        se convierte en JavaScript puro (sin tipado estático) y puede ejecutarse en cualquier entorno que soporte JavaScript.
+        Esto permite que disfrutes de las ventajas del tipado estático durante el desarrollo sin renunciar a la flexibilidad y compatibilidad de JavaScript.
+
+    tipado dinamico:
+        El tipado dinámico es una característica de ciertos lenguajes de programación donde el tipo de una variable se determina en tiempo de ejecución, 
+        en lugar de en tiempo de compilación. En estos lenguajes, las variables no requieren una declaración de tipo explícita, 
+        y pueden cambiar de tipo a medida que el programa se ejecuta.
+
+        JavaScript es un ejemplo típico de un lenguaje de tipado dinámico. Puedes declarar una variable y asignarle un valor de cualquier
+        tipo sin necesidad de especificar el tipo de la variable:
+
+        
+        Copiar código
+            let variable = 42;       // Aquí la variable es un número
+            variable = "Hola";       // Ahora la misma variable es una cadena de texto
+            variable = true;         // Ahora la variable es un booleano
+        
+        En el ejemplo anterior, la variable variable cambia su tipo de number a string y luego a boolean durante la ejecución del programa. 
+        El lenguaje y el entorno de ejecución se encargan de gestionar estos cambios de tipo.
+
+        Ventajas del Tipado Dinámico:
+            Flexibilidad:   
+                Puedes cambiar el tipo de una variable en cualquier momento, lo que puede ser útil en situaciones donde 
+                no se conoce el tipo de datos con antelación.
+
+            Menos código inicial: 
+                No necesitas declarar el tipo de cada variable, lo que puede hacer que el código sea más conciso y fácil de escribir.
+        
+        Desventajas del Tipado Dinámico:
+            Errores en tiempo de ejecución: 
+                Los errores de tipo solo se detectan cuando el programa se ejecuta, lo que puede hacer que algunos errores sean más difíciles de detectar y depurar.
+
+            Menos optimización: 
+                Los lenguajes de tipado dinámico pueden ser menos eficientes en términos de rendimiento, 
+                ya que el entorno de ejecución debe verificar y gestionar los tipos en tiempo real.
+        
+        En resumen, el tipado dinámico ofrece una gran flexibilidad a costa de la seguridad de tipos, 
+        permitiendo que las variables cambien de tipo a lo largo de la ejecución del programa.
+
+
+
+---------------------------------
+
+---------------------------------
