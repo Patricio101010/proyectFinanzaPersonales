@@ -1,0 +1,35 @@
+
+-----------------------
+TIPO DE DATOS
+-----------------------
+    primitivos - (stack):
+        Stack: Es rápido y se utiliza para almacenar variables locales y ejecutar funciones. Las variables almacenadas en el stack tienen un ciclo de vida corto (duran lo que dura la función).
+        
+        Es una característica de ciertos lenguajes de programación donde el tipo de una variable se determina en tiempo de ejecución, en lugar de en tiempo de compilación. 
+        En estos lenguajes, las variables no requieren una declaración de tipo explícita, y pueden cambiar de tipo a medida que el programa se ejecuta.    
+        En cuanto a los tipos de datos en JavaScript, existen varios tipos, incluidos:
+        -   Números (Number): Representan valores numéricos, como 5 o 3.14.
+        -   Cadenas de texto (String): Representan secuencias de caracteres, como "Hola, mundo".
+        -   Booleanos (Boolean): Representan valores de verdadero (true) o falso (false).
+        -   Valores nulos (null) y indefinidos (undefined): Representan la ausencia de valor o un valor no definido.
+
+        Características de los Tipos Primitivos:
+            Inmutabilidad: En muchos lenguajes, los valores primitivos son inmutables, lo que significa que su valor no puede cambiar una vez asignado.
+            Almacenamiento simple: Los tipos de datos primitivos suelen almacenarse directamente en la memoria (en la pila), lo que los hace más rápidos y eficientes en términos de uso de recursos.
+            Operaciones directas: Se pueden realizar operaciones directas sobre estos tipos de datos sin necesidad de métodos o constructores especiales.
+
+        Constantes: ?
+
+
+    de referencia - (heap):
+        Heap: Es más flexible y se utiliza para almacenar datos que necesitan ser más dinámicos o que tienen un ciclo de vida más largo, como objetos y arreglos. La gestión de la memoria es más compleja, y por eso JavaScript utiliza un recolector de basura.
+       
+        son aquellos en los que las variables no almacenan directamente el valor del dato, sino una referencia a la ubicación de ese dato en la memoria (específicamente en el heap). Esto contrasta con los tipos de datos primitivos, que se almacenan directamente en el stack.    
+            -   Objetos: Representan colecciones de pares clave-valor, como { nombre: "Juan", edad: 30 }. "esas llaves se le llama obj literal {}"
+
+            -   Arreglos: Representan listas ordenadas de valores, como [1, 2, 3].
+            -   Funciones: Representan bloques de código que se pueden ejecutar.
+            -   Clases:
+
+    Estos son solo algunos de los tipos de datos y operadores en JavaScript. 
+    El lenguaje también tiene soporte para otros tipos y operadores más avanzados.
